@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziphokuhle Sithole - CV</title>
+    <style>
+        body {
+            font-family: 'Calibri', Arial, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            font-size: 11pt;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c5282;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .name {
+            font-size: 28pt;
+            font-weight: bold;
+            color: #2c5282;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+            font-size: 10pt;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #2c5282;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .education-item, .experience-item {
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 3px solid #e2e8f0;
+        }
+        
+        .edu-header, .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+        }
+        
+        .degree {
+            font-weight: bold;
+            font-size: 12pt;
+            color: #2c5282;
+        }
+        
+        .institution {
+            font-weight: 600;
+            color: #4a5568;
+        }
+        
+        .date {
+            font-style: italic;
+            color: #718096;
+            font-size: 10pt;
+        }
+        
+        .location {
+            color: #718096;
+            font-size: 10pt;
+        }
+        
+        .subjects {
+            margin-top: 8px;
+        }
+        
+        .subjects ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        
+        .subjects li {
+            margin-bottom: 3px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .skill-category {
+            background: #f7fafc;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #2c5282;
+        }
+        
+        .skill-category h4 {
+            margin: 0 0 8px 0;
+            color: #2c5282;
+            font-size: 11pt;
+        }
+        
+        .skill-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 10pt;
+        }
+        
+        .skill-level {
+            color: #718096;
+            font-style: italic;
+        }
+        
+        .languages {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .language {
+            background: #e2e8f0;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 10pt;
+            color: #2c5282;
+            font-weight: 500;
+        }
+        
+        .cert-item {
+            background: #f0f8f0;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 4px solid #38a169;
+            margin-bottom: 10px;
+        }
+        
+        .cert-name {
+            font-weight: bold;
+            color: #38a169;
+            margin-bottom: 5px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #2c5282;
+            font-size: 12pt;
+        }
+        
+        .company {
+            font-weight: 600;
+            color: #4a5568;
+        }
+        
+        .job-description {
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+        
+        @media print {
+            body {
+                padding: 10px;
+                font-size: 10pt;
+            }
+            .contact-info {
+                font-size: 9pt;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">Ziphokuhle Sithole</div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>📧</span>
+                <span>zipholsithole@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <span>📱</span>
+                <span>084 039 4723</span>
+            </div>
+            <div class="contact-item">
+                <span>📍</span>
+                <span>2608/026 Matshaya Street, Jabulani, Soweto 1868</span>
+            </div>
+            <div class="contact-item">
+                <span>💼</span>
+                <span>linkedin.com/in/ziphokuhle-sithole-08062021</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        
+        <div class="education-item">
+            <div class="edu-header">
+                <div>
+                    <div class="degree">National Diploma in Multimedia</div>
+                    <div class="institution">Tshwane University of Technology</div>
+                </div>
+                <div style="text-align: right;">
+                    <div class="date">Jan 2018 - Present</div>
+                    <div class="location">Tshwane</div>
+                </div>
+            </div>
+            <div class="subjects">
+                <strong>Key Areas of Study:</strong>
+                <ul>
+                    <li>Web design and development basics</li>
+                    <li>Graphic design principles and techniques</li>
+                    <li>Audio and video editing software</li>
+                    <li>Digital media production and editing</li>
+                    <li>User interface (UI) and user experience (UX) design fundamentals</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="education-item">
+            <div class="edu-header">
+                <div>
+                    <div class="degree">Matric Certificate</div>
+                    <div class="institution">Sizanani Secondary School</div>
+                </div>
+                <div style="text-align: right;">
+                    <div class="date">Jan 2016 - Dec 2016</div>
+                    <div class="location">Newcastle</div>
+                </div>
+            </div>
+            <div class="subjects">
+                <strong>Subjects:</strong>
+                <ul>
+                    <li>Agricultural Science</li>
+                    <li>Life Science</li>
+                    <li>Geography</li>
+                    <li>Mathematical Literacy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Work Experience</div>
+        
+        <div class="experience-item">
+            <div class="exp-header">
+                <div>
+                    <div class="job-title">Software Tester</div>
+                    <div class="company">DreamCelsius</div>
+                </div>
+                <div style="text-align: right;">
+                    <div class="date">Aug 2024 - Jul 2025</div>
+                    <div class="location">Johannesburg, ZA</div>
+                </div>
+            </div>
+            <div class="job-description">
+                Performed manual testing on web and mobile applications to validate functionality and user experience. Contributed to quality assurance processes and identified potential issues to improve overall product reliability.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Skills</div>
+        
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <div class="skill-item">
+                    <span>C#</span>
+                    <span class="skill-level">Good</span>
+                </div>
+                <div class="skill-item">
+                    <span>HTML</span>
+                    <span class="skill-level">Good</span>
+                </div>
+                <div class="skill-item">
+                    <span>JavaScript</span>
+                    <span class="skill-level">Moderate</span>
+                </div>
+                <div class="skill-item">
+                    <span>Java</span>
+                    <span class="skill-level">Moderate</span>
+                </div>
+                <div class="skill-item">
+                    <span>PHP</span>
+                    <span class="skill-level">Good</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Technical & Design</h4>
+                <div class="skill-item">
+                    <span>Web Design</span>
+                    <span class="skill-level">Good</span>
+                </div>
+                <div class="skill-item">
+                    <span>UI/UX Design</span>
+                    <span class="skill-level">Good</span>
+                </div>
+                <div class="skill-item">
+                    <span>Software Testing</span>
+                    <span class="skill-level">Good</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Soft Skills</h4>
+                <div class="skill-item">
+                    <span>Team Collaboration</span>
+                    <span class="skill-level">Good</span>
+                </div>
+                <div class="skill-item">
+                    <span>Adaptability</span>
+                    <span class="skill-level">Good</span>
+                </div>
+                <div class="skill-item">
+                    <span>Problem-solving</span>
+                    <span class="skill-level">Good</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Languages</div>
+        <div class="languages">
+            <div class="language">English</div>
+            <div class="language">Zulu</div>
+            <div class="language">Xhosa</div>
+            <div class="language">Sotho</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        
+        <div class="cert-item">
+            <div class="cert-name">Microsoft Azure Fundamentals (AZ-900)</div>
+            <div>Certified in Microsoft Azure Fundamentals demonstrating foundational knowledge of cloud services and how they are provided with Microsoft Azure.</div>
+        </div>
+    </div>
+</body>
+</html>
